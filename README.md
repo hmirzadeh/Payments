@@ -36,7 +36,7 @@ To demonstrate different layers of areas and domains of concern, a Clean Archite
 ![Diagram](https://github.com/hmirzadeh/Payments/blob/master/OnionArchitecture.jpg)
 
 
-# Solution Diagram:
+## Solution request flow Diagram:
 ![Diagram](https://github.com/hmirzadeh/Payments/blob/master/Diagram.jpg)
 
 # Assumptions: 
