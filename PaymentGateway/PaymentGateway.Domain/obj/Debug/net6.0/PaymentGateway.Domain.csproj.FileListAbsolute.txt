@@ -1,0 +1,12 @@
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\bin\Debug\net6.0\PaymentGateway.Domain.deps.json
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\bin\Debug\net6.0\PaymentGateway.Domain.dll
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\bin\Debug\net6.0\PaymentGateway.Domain.pdb
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\obj\Debug\net6.0\PaymentGateway.Domain.csproj.AssemblyReference.cache
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\obj\Debug\net6.0\PaymentGateway.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\obj\Debug\net6.0\PaymentGateway.Domain.AssemblyInfoInputs.cache
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\obj\Debug\net6.0\PaymentGateway.Domain.AssemblyInfo.cs
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\obj\Debug\net6.0\PaymentGateway.Domain.csproj.CoreCompileInputs.cache
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\obj\Debug\net6.0\PaymentGateway.Domain.dll
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\obj\Debug\net6.0\refint\PaymentGateway.Domain.dll
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\obj\Debug\net6.0\PaymentGateway.Domain.pdb
+C:\MyRepo\Checkout\PaymentGateway\PaymentGateway.Domain\obj\Debug\net6.0\ref\PaymentGateway.Domain.dll

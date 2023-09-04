@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "CNlFdCcmtPCa0fh0rtUV/42vVMri67/3362sOBq+wQiUPKTXvar2I9C5CXTXc28Im5hQY8aRXpRTqCObjWKSGQ==",
+  "success": true,
+  "projectFilePath": "C:\\MyRepo\\Checkout\\PaymentGateway\\PaymentGateway.Application\\PaymentGateway.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hashem Mirzadeh\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Hashem Mirzadeh\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Hashem Mirzadeh\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512",
+    "C:\\Users\\Hashem Mirzadeh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Hashem Mirzadeh\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Hashem Mirzadeh\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\Hashem Mirzadeh\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Hashem Mirzadeh\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

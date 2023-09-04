@@ -1,0 +1,19 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=23fedf0d_002Dc76a_002D44ea_002Da971_002Da582369ea9b9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Validate" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\MyRepo\Checkout\PaymentGateway" Presentation="&amp;lt;Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=731d28f0_002Db8fc_002D460a_002D8be8_002D1201c710be85/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Valid_CardNumber_Should_Return_PaymentResult #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C5B5AC7E-D090-45BE-B50C-234FDCD63EDF::net6.0::PaymentGateway.Application.UnitTests.PaymentServiceTests.Valid_CardNumber_Should_Return_PaymentResult&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=77b1d398_002D7d53_002D4dec_002Dae50_002De18c5d0562bc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Valid_CardNumber_Should_Return_PaymentResult #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C5B5AC7E-D090-45BE-B50C-234FDCD63EDF::net6.0::PaymentGateway.Application.UnitTests.PaymentServiceTests.Valid_CardNumber_Should_Return_PaymentResult&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f8d92be6_002D06b0_002D4b98_002Dbeb9_002D1aa0a92e4279/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Valid_CardNumber_Should_Return_PaymentResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C5B5AC7E-D090-45BE-B50C-234FDCD63EDF::net6.0::PaymentGateway.Application.UnitTests.PaymentServiceTests.Valid_CardNumber_Should_Return_PaymentResult&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
