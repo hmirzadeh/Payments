@@ -7,7 +7,7 @@ using PaymentGateway.Domain.Configurations;
 using PaymentGateway.Application.Infrastructure;
 using PaymentGateway.Application.Common.Validators;
 using PaymentGateway.Application.Common.Mappers;
-using PaymentGateway.Infrastructure.External;
+using PaymentGateway.Infrastructure.ExternalData;
 
 var builder = WebApplication.CreateBuilder(args);
 

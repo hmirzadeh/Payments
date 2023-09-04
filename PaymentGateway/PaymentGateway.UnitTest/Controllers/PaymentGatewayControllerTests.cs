@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using PaymentGateway.Api.Controllers;
+using PaymentGateway.Api.Payments;
 using PaymentGateway.Application.Features.Payment.CommandModels;
 using PaymentGateway.Application.Features.Payment.QueryModels;
 using PaymentGateway.Application.Features.Payment.Services;

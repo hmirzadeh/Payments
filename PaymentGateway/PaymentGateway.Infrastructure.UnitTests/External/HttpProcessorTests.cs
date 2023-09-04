@@ -1,7 +1,7 @@
 using Moq;
 using Moq.Protected;
-using PaymentGateway.Infrastructure.External;
 using PaymentGateway.Application.Features.Payment.QueryModels;
+using PaymentGateway.Infrastructure.ExternalData;
 
 namespace PaymentGateway.Infrastructure.UnitTests.External
 {

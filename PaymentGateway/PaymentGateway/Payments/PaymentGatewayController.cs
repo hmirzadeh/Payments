@@ -5,7 +5,7 @@ using PaymentGateway.Application.Features.Payment.Services;
 using PaymentGateway.Domain.Enums;
 using PaymentGateway.Domain.Exceptions;
 
-namespace PaymentGateway.Api.Controllers
+namespace PaymentGateway.Api.Payments
 {
     [ApiController]
     [Route("payments")]
