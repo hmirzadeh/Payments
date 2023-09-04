@@ -89,7 +89,7 @@ namespace PaymentGateway.Application.UnitTests.Services
         }
 
         [Test]
-        public void Given_Payment_Sent_To_ProcessPayment_When_Payment_Is_Valid_Then_PaymentResult_Should_Be_Successful_And_PaymentId_IsNot_Null()
+        public void Given_ProcessPayment_When_Payment_Is_Valid_Then_PaymentResult_Should_Be_Successful_And_PaymentId_IsNot_Null()
         {
             _mockHttpProcessor.Setup(x => x.SendRequest<Payment, PaymentResult>(
                 It.IsAny<Payment>(), It.IsAny<HttpMethod>(), It.IsAny<string>())).ReturnsAsync(PaymentResult.Successful);
@@ -107,7 +107,7 @@ namespace PaymentGateway.Application.UnitTests.Services
 
         }
         [Test]
-        public void Given_ProcessPayment_Is_Triggered_When_Infrastructure_Layer_Throws_Exception_Then_PaymentResult_Should_Be_InternalError()
+        public void Given_ProcessPayment_When_Infrastructure_Layer_Throws_Exception_Then_PaymentResult_Should_Be_InternalError()
         {
             _mockHttpProcessor.Setup(x => x.SendRequest<Payment, PaymentResult>(
                 It.IsAny<Payment>(), It.IsAny<HttpMethod>(), It.IsAny<string>())).Throws<Exception>();
@@ -125,7 +125,7 @@ namespace PaymentGateway.Application.UnitTests.Services
         }
 
         [Test]
-        public void Given_RetreivePayment_Is_Triggered_When_PaymentId_Is_Valid_Then_It_Should_Return_A_Payment_And_Mask_CardNumber()
+        public void Given_RetreivePayment_When_PaymentId_Is_Valid_Then_It_Should_Return_A_Payment_And_Mask_CardNumber()
         {
             _mockHttpProcessor.Setup(x => x.SendRequest<It.IsAnyType, CompletedPayment>(
                 It.IsAny<It.IsAnyType>(), It.IsAny<HttpMethod>(), It.IsAny<string>())).ReturnsAsync(_completedResult);

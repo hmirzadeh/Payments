@@ -48,7 +48,7 @@ namespace PaymentGateway.Api.UnitTests.Controllers
         }
 
         [Test]
-        public void Given_A_Payment_Sent_To_POST_Endpoint_When_Payment_Is_Valid_Then_Response_Should_Be_Ok_200()
+        public void Given_POST_Endpoint_When_Payment_Is_Valid_Then_Response_Should_Be_Ok_200()
         {
             _submitPaymentResult = new ProcessPaymentResult()
             {
@@ -65,7 +65,7 @@ namespace PaymentGateway.Api.UnitTests.Controllers
         }
 
         [Test]
-        public void Given_A_Valid_Payment_Sent_To_POST_When_ProcessPayment_Service_Has_Error_Then_Response_Should_Be_InternalError_500()
+        public void Given_POST_Endpoint_When_ProcessPayment_Service_Has_Error_Then_Response_Should_Be_InternalError_500()
         {
             _submitPaymentResult = new ProcessPaymentResult()
             {
