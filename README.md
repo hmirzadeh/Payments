@@ -19,6 +19,7 @@ Chrome://flags/#allow-insecure-localhost
 `.Net 6`
 `Clean Architecture`
 `NUNIT`
+`Moq`
 `FluentValidation`
 `AutoMapper`
 `Unit Tests`
