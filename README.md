@@ -19,11 +19,11 @@ To demonstrate different layers of areas and domains of concern, a Clean Archite
 -	Infrastructure deals with low level data infrastructure (Http Processor). HttpProcessor class is a generic class that can send any type of HTTP request. Retry and circuit breaking mechanism can be implemented here in the future. Loggings and other infrastructure stuff could also be implemented here in the future
 -	Presentation layer is the PaymentGateway API containing 2 endpoints, one GET to get payment information and one POST to process a payment.
 
-![Diagram](https://github.com/hmirzadeh/PaymentGateway/blob/main/OnionArchitecture.jpg)
+![Diagram](https://github.com/hmirzadeh/Payments/blob/master/OnionArchitecture.jpg)
 
 
 # Solution Diagram:
-![Diagram](https://github.com/hmirzadeh/PaymentGateway/blob/main/Diagram.jpg)
+![Diagram](https://github.com/hmirzadeh/Payments/blob/master/Diagram.jpg)
 
 # Assumptions: 
 -	Acquiring bank will always be a separate API and gateway API shall communicate with it using HTTP
