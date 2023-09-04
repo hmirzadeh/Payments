@@ -13,7 +13,7 @@ o	3 unit test projects representing each layer of the system
 NOTE: if you get SSL error when opening Swagger page, consider temporarily allowing insecure localhost in your browser, here is the URL for Chrome:  
 Chrome://flags/#allow-insecure-localhost
 
-# Technologies and techniques used:
+### Technologies and techniques used:
 
 `C#`
 `.Net 6`
