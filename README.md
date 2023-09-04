@@ -27,10 +27,10 @@ Chrome://flags/#allow-insecure-localhost
 
 # Code Architecture and System Components:
 **Note**: For a small project, structuring layers in folders might have sufficed, but this solution is split into different DLLs to highlight the layers of Clean Architecture.</br>
-To demonstrate different layers of areas and domains of concern, a Clean Architecture has been implemented in 4 different projects under /src  folder. Each layer only depends on the inner layer, starting from the core layer:
--	 Domain layer contains entities, models, exceptions and Enums. 
+To demonstrate different layers and areas of concern, a Clean Architecture has been implemented in 4 different projects under /src  folder. Each layer only depends on the inner layer, starting from the core layer:
+-	Domain layer contains entities, models, exceptions and Enums. 
 -	Application layer holds  logic for Use Cases and features of the system, mappings and validations. PaymentService class has 2 functions that map the models and submits a request to HttpProcessor to send external request to acquiring bank 
--   Presentation which is a Web API, contains the PaymentGateway controller under Payments folder (folder is named according to the domain of concern, instead of just Controller. from my point of view both should be acceptable)
+-   Presentation which is a Web API, contains the PaymentGateway controller under Payments folder (folder is named according to the domain of concern, instead of just naming it Controller. from my point of view both should be acceptable)
 -	Infrastructure deals with low level data infrastructure (Http Processor). HttpProcessor class is a generic class that can send any type of HTTP request. Retry and circuit breaking mechanism can be implemented here in the future. Loggings and other infrastructure stuff could also be implemented here in the future
 -	Presentation layer is the PaymentGateway API containing 2 endpoints, one GET to get payment information and one POST to process a payment.
 
@@ -59,6 +59,7 @@ To demonstrate different layers of areas and domains of concern, a Clean Archite
 -	We can add a health check to the system through logging under catch blocks and creating alerts accordingly
 -	API Versioning 
 -	Payments could also be cached to minimize communications to Acquiring bank 
+-   400 error responses can be customised better
 
 # Cloud:
 -	The service can be containerised using a dockerfile and deployed to a Kubernetes cluster. With this, we can enable auto scaling to scale out or in number of pods according to the traffic load.
