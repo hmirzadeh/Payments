@@ -6,8 +6,10 @@ o	3 unit test projects representing each layer of the system
 
 
 # How to run the solutions:
-1-	Open AquiringBankSilmulator with visual studio (2022?) and click run, this will open the swagger in a browser. Copy the base URL and the port from the browser and store to be copied later into appsettings.json in PaymentGateway API.
-2-	Open PaymentGateway API with visual studio, paste the base URL of AcquiringBankSimulator with correct port into appsettings.json under "AcquiringBank": "BaseURL" and run the API. This should bring up the swagger page for PaymentGateway API that consist of 2 endpoints. You can use Swagger or Postman to call these 2 endpoints.
+-	Open AquiringBankSilmulator with visual studio (2022?) and click run, this will open the swagger in a browser. Copy the base URL and the port from the browser and store to be copied later into appsettings.json in PaymentGateway API.
+-	Open PaymentGateway API with visual studio, paste the base URL of AcquiringBankSimulator with correct port into appsettings.json under "AcquiringBank": "BaseURL" and run the API. This should bring up the swagger page for PaymentGateway API that consist of 2 endpoints. You can use Swagger or Postman to call these 2 endpoints.
+
+
 NOTE: if you get SSL error when opening Swagger page, consider temporarily allowing insecure localhost in your browser, here is the URL for Chrome:  
 Chrome://flags/#allow-insecure-localhost
 
