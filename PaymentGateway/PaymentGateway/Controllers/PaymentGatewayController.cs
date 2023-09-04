@@ -8,7 +8,7 @@ using PaymentGateway.Domain.Exceptions;
 namespace PaymentGateway.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("payments")]
     public class PaymentGatewayController : ControllerBase
     {
         private readonly IPaymentService _paymentService;
