@@ -48,7 +48,7 @@ namespace PaymentGateway.Api.UnitTests.Controllers
         }
 
         [Test]
-        public void Given_A_Payment_Posted_When_Payment_Is_Valid_Then_Response_Should_Be_Ok_200()
+        public void Given_A_Payment_Sent_To_POST_Endpoint_When_Payment_Is_Valid_Then_Response_Should_Be_Ok_200()
         {
             _submitPaymentResult = new ProcessPaymentResult()
             {
@@ -65,7 +65,7 @@ namespace PaymentGateway.Api.UnitTests.Controllers
         }
 
         [Test]
-        public void Given_A_Payment_Posted_When_ProcessPayment_Service_Has_Error_Then_Response_Should_Be_InternalError_500()
+        public void Given_A_Valid_Payment_Sent_To_POST_When_ProcessPayment_Service_Has_Error_Then_Response_Should_Be_InternalError_500()
         {
             _submitPaymentResult = new ProcessPaymentResult()
             {
@@ -82,7 +82,7 @@ namespace PaymentGateway.Api.UnitTests.Controllers
         }
 
         [Test]
-        public void Given_Get_Endpoint_Triggered_When_PaymentId_Is_Valid_Then_Get_Should_Return_200_Valid_And_Payment()
+        public void Given_GET_Endpoint_Triggered_When_PaymentId_Is_Valid_Then_It_Should_Return_200_And_Payment()
         {
             _paymentServiceMock.Setup(x => x.RetrievePayment(It.IsAny<int>())).ReturnsAsync(_paymentResult);
             var paymentGatewayController = new PaymentGatewayController(_paymentServiceMock.Object);
@@ -94,7 +94,7 @@ namespace PaymentGateway.Api.UnitTests.Controllers
         }
 
         [Test]
-        public void Given_Get_Endpoint_Triggered_When_RetrievePayment_Throws_Error_Then_Get_Should_Return_500_InternalError()
+        public void Given_GET_Endpoint_Triggered_When_RetrievePayment_Throws_Error_Then_It_Should_Return_500_InternalError()
         {
             _paymentServiceMock.Setup(x => x.RetrievePayment(It.IsAny<int>())).ThrowsAsync(new Exception());
             var paymentGatewayController = new PaymentGatewayController(_paymentServiceMock.Object);

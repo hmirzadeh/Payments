@@ -40,7 +40,7 @@ namespace PaymentGateway.Infrastructure.UnitTests.External
         }
 
         [Test]
-        public void Given_SendAsync_Returns_String_Json_When_SendRequest_Has_ReturnType_Of_GetPaymentResult_Then_It_Should_Deserialize_Correctly()
+        public void Given_SendAsync_Returns_A_Valid_String_When_SendRequest_Is_Triggered_With_ReturnType_Of_GetPaymentResult_Then_It_Should_Deserialize_Correctly()
         {
             var httpProcessor = new HttpProcessor(_mockHttpClient.Object);
             var response = httpProcessor.SendRequest<object, RetrievePaymentResult>("", HttpMethod.Get, "https://SomeBaseURL.com").Result;
