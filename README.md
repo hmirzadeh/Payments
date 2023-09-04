@@ -26,7 +26,7 @@ Chrome://flags/#allow-insecure-localhost
 `Postman`
 
 # Code Architecture and System Components:
-**Note**: For a small project, structuring layers in folders might have sufficed, but this solution is split into different DLLs to highlight the layers of Clean Architecture.
+**Note**: For a small project, structuring layers in folders might have sufficed, but this solution is split into different DLLs to highlight the layers of Clean Architecture.</br>
 To demonstrate different layers of areas and domains of concern, a Clean Architecture has been implemented in 4 different projects under /src  folder. Each layer only depends on the inner layer, starting from the core layer:
 -	 Domain layer contains entities, models, exceptions and Enums. 
 -	Application layer holds  logic for Use Cases and features of the system, mappings and validations. PaymentService class has 2 functions that map the models and submits a request to HttpProcessor to send external request to acquiring bank 

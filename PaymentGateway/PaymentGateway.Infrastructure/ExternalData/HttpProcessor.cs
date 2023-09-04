@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using PaymentGateway.Application.Infrastructure;
 
-namespace PaymentGateway.Infrastructure.External
+namespace PaymentGateway.Infrastructure.ExternalData
 {
     public class HttpProcessor: IHttpProcessor
     {
