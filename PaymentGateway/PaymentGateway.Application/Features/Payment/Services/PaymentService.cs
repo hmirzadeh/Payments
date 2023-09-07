@@ -54,14 +54,14 @@ namespace PaymentGateway.Application.Features.Payment.Services
         /// </summary>
         /// <param name="paymentQuery">An integer representing Id of an already processed payment</param>
         /// <returns>A Model containing a payment information</returns>
-        public async Task<RetrievePaymentResult> RetrievePayment(int paymentQuery)
+        public async Task<RetrievePaymentResult> RetrievePayment(string paymentQuery)
         {
         
             var url = $"{_config.Value.BaseURL}/getPayment/{paymentQuery}";
             var paymentResponse = await _httpProcessor.SendRequest<object, CompletedPayment>("", HttpMethod.Get, url);
 
             var response = _mapper.Map<RetrievePaymentResult>(paymentResponse);
-            response.CardNumber = MaskingUtility.MaskValues(response.CardNumber, 4);
+            response.CardNumber = string.IsNullOrEmpty(response.CardNumber)? string.Empty: MaskingUtility.MaskValues(response.CardNumber, 4);
 
             return response;
         }

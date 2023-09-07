@@ -42,7 +42,7 @@ namespace PaymentGateway.Api.Payments
         /// <param name="paymentId">an integer representing Payment ID</param>
         /// <returns>Status Code</returns>
         [HttpGet("{paymentId?}")]
-        public async Task<IActionResult> Get(int paymentId)
+        public async Task<IActionResult> Get(string paymentId)
         {
             RetrievePaymentResult paymentResponse;
             try
@@ -55,7 +55,7 @@ namespace PaymentGateway.Api.Payments
                     "An error occurred during processing of request");
                 return StatusCode(StatusCodes.Status500InternalServerError, error);
             }
-            return paymentResponse is null
+            return paymentResponse.Id==Guid.Empty
                 ? NotFound($"Payment with Id {paymentId} Does not exist.")
                 : Ok(paymentResponse);
         }

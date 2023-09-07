@@ -6,7 +6,7 @@ namespace PaymentGateway.Application.Features.Payment.Services
     public interface IPaymentService
     {
         Task<ProcessPaymentResult> ProcessPayment(ProcessPaymentCommand payment);
-        Task<RetrievePaymentResult> RetrievePayment(int paymentQuery);
+        Task<RetrievePaymentResult> RetrievePayment(string paymentQuery);
 
     }
 }
