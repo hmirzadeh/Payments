@@ -56,7 +56,7 @@ namespace PaymentGateway.Api.Payments
                 return StatusCode(StatusCodes.Status500InternalServerError, error);
             }
             return paymentResponse.Id==Guid.Empty
-                ? NotFound($"Payment with Id {paymentId} Does not exist.")
+                ? StatusCode(StatusCodes.Status404NotFound, new BaseErrorResponse(StatusCodes.Status404NotFound, $"Payment with Id {paymentId} Does not exist."))
                 : Ok(paymentResponse);
         }
     }
