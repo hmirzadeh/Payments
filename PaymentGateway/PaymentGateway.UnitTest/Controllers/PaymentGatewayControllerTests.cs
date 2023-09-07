@@ -84,9 +84,9 @@ namespace PaymentGateway.Api.UnitTests.Controllers
         [Test]
         public void Given_GET_Endpoint_Triggered_When_PaymentId_Is_Valid_Then_It_Should_Return_200_And_Payment()
         {
-            _paymentServiceMock.Setup(x => x.RetrievePayment(It.IsAny<int>())).ReturnsAsync(_paymentResult);
+            _paymentServiceMock.Setup(x => x.RetrievePayment(It.IsAny<string>())).ReturnsAsync(_paymentResult);
             var paymentGatewayController = new PaymentGatewayController(_paymentServiceMock.Object);
-            var response = paymentGatewayController.Get(1234).Result as ObjectResult;
+            var response = paymentGatewayController.Get("Guid-string-1234").Result as ObjectResult;
             Assert.IsNotNull(response);
             Assert.AreEqual(response.StatusCode, StatusCodes.Status200OK);
             Assert.AreEqual(response.Value, _paymentResult);
@@ -96,11 +96,20 @@ namespace PaymentGateway.Api.UnitTests.Controllers
         [Test]
         public void Given_GET_Endpoint_Triggered_When_RetrievePayment_Throws_Error_Then_It_Should_Return_500_InternalError()
         {
-            _paymentServiceMock.Setup(x => x.RetrievePayment(It.IsAny<int>())).ThrowsAsync(new Exception());
+            _paymentServiceMock.Setup(x => x.RetrievePayment(It.IsAny<string>())).ThrowsAsync(new Exception());
             var paymentGatewayController = new PaymentGatewayController(_paymentServiceMock.Object);
-            var response = paymentGatewayController.Get(1234).Result as ObjectResult;
+            var response = paymentGatewayController.Get("Guid-string-1234").Result as ObjectResult;
             Assert.IsNotNull(response);
             Assert.AreEqual(response.StatusCode, StatusCodes.Status500InternalServerError);
+
+        }
+        [Test]
+        public void Given_GET_Endpoint_Triggered_When_Payment_doesnt_Exist_Then_It_Should_Return_404()
+        {
+            _paymentServiceMock.Setup(x => x.RetrievePayment(It.IsAny<string>())).ReturnsAsync(new RetrievePaymentResult());
+            var paymentGatewayController = new PaymentGatewayController(_paymentServiceMock.Object);
+            var response = paymentGatewayController.Get("Guid-string-1234").Result as ObjectResult;
+            Assert.AreEqual(response.StatusCode, StatusCodes.Status404NotFound);
 
         }
     }

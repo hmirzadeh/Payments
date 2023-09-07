@@ -133,7 +133,7 @@ namespace PaymentGateway.Application.UnitTests.Services
             _mapper.Setup(x => x.Map<RetrievePaymentResult>(It.IsAny<CompletedPayment>())).Returns(_paymentResult);
 
             _service = new PaymentService(_mockHttpProcessor.Object, options, _mapper.Object);
-            var payment = _service.RetrievePayment(123455).Result;
+            var payment = _service.RetrievePayment("123455").Result;
 
             Assert.IsNotNull(payment);
             Assert.IsInstanceOf(typeof(RetrievePaymentResult), payment);
